@@ -2,34 +2,34 @@
 
 namespace App\Repository;
 
-use App\Entity\Competition;
+use App\Entity\Concerne;
 use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
 
 /**
- * Repository de l'entité Competition.
+ * Repository de l'entité Concerne.
  *
- * Permet d'effectuer des requêtes sur l'entité Competition
+ * Permet d'effectuer des requêtes sur l'entité Concerne
  * via Doctrine.
  *
- * @extends ServiceEntityRepository<Competition>
+ * @extends ServiceEntityRepository<Concerne>
  */
-class CompetitionRepository extends ServiceEntityRepository
+class ConcerneRepository extends ServiceEntityRepository
 {
     /**
-     * Constructeur du repository Competition.
+     * Constructeur du repository Concerne.
      *
-     * Associe l'entité Competition au gestionnaire Doctrine.
+     * Associe l'entité Concerne au gestionnaire Doctrine.
      *
      * @param ManagerRegistry $registry le registre des managers Doctrine
      */
     public function __construct(ManagerRegistry $registry)
     {
-        parent::__construct($registry, Competition::class);
+        parent::__construct($registry, Concerne::class);
     }
 
 //    /**
-//     * @return Competition[] Returns an array of Competition objects
+//     * @return Concerne[] Returns an array of Concerne objects
 //     */
 //    public function findByExampleField($value): array
 //    {
@@ -43,7 +43,7 @@ class CompetitionRepository extends ServiceEntityRepository
 //        ;
 //    }
 
-//    public function findOneBySomeField($value): ?Competition
+//    public function findOneBySomeField($value): ?Concerne
 //    {
 //        return $this->createQueryBuilder('c')
 //            ->andWhere('c.exampleField = :val')

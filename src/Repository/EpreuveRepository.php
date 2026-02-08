@@ -7,10 +7,22 @@ use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
 
 /**
+ * Repository de l'entité Epreuve.
+ *
+ * Permet d'effectuer des requêtes sur l'entité Epreuve
+ * via Doctrine.
+ *
  * @extends ServiceEntityRepository<Epreuve>
  */
 class EpreuveRepository extends ServiceEntityRepository
 {
+    /**
+     * Constructeur du repository Epreuve.
+     *
+     * Associe l'entité Epreuve au gestionnaire Doctrine.
+     *
+     * @param ManagerRegistry $registry le registre des managers Doctrine
+     */
     public function __construct(ManagerRegistry $registry)
     {
         parent::__construct($registry, Epreuve::class);
