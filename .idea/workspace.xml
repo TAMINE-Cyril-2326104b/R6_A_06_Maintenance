@@ -4,22 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f170eba8-1f40-4e67-abf7-868f21c7fa8a" name="Changes" comment="docs: Ajout de commentaires">
-      <change afterPath="$PROJECT_DIR$/src/Entity/AppartientA.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/Championnat.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/Competition.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/Concerne.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/Epreuve.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/Sport.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/AppartientARepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/ChampionnatRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/CompetitionRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/ConcerneRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/EpreuveRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/SportRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-    </list>
+    <list default="true" id="0fd3f120-a56e-414b-8fe6-36cc63c626cb" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,7 +17,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="entityCreation" />
+        <entry key="$PROJECT_DIR$" value="controller" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -193,7 +178,6 @@
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "creationEntity",
     "ignore.virus.scanning.warn.message": "true",
     "junie.onboarding.icon.badge.shown": "true",
     "last_opened_file_path": "C:/Users/Cyril/Documents/BUT INFO/Semestre 6/R6.06/R6_A_06_Maintenance",
