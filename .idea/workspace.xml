@@ -4,21 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f170eba8-1f40-4e67-abf7-868f21c7fa8a" name="Changes" comment="docs: Ajout de commentaires">
-      <change afterPath="$PROJECT_DIR$/src/Entity/AppartientA.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/Championnat.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/Competition.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/Concerne.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/Epreuve.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/Sport.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/AppartientARepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/ChampionnatRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/CompetitionRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/ConcerneRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/EpreuveRepository.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/SportRepository.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="f170eba8-1f40-4e67-abf7-868f21c7fa8a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/commandlinetools/Symfony_09_02_2026_08_52.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,6 +161,20 @@
       <path value="$PROJECT_DIR$/vendor/symfony/monolog-bridge" />
       <path value="$PROJECT_DIR$/vendor/symfony/dependency-injection" />
       <path value="$PROJECT_DIR$/vendor/symfony/doctrine-bridge" />
+      <path value="$PROJECT_DIR$/vendor/clue/ndjson-react" />
+      <path value="$PROJECT_DIR$/vendor/behat/behat" />
+      <path value="$PROJECT_DIR$/vendor/behat/gherkin" />
+      <path value="$PROJECT_DIR$/vendor/fidry/cpu-core-counter" />
+      <path value="$PROJECT_DIR$/vendor/react/stream" />
+      <path value="$PROJECT_DIR$/vendor/react/cache" />
+      <path value="$PROJECT_DIR$/vendor/react/dns" />
+      <path value="$PROJECT_DIR$/vendor/react/socket" />
+      <path value="$PROJECT_DIR$/vendor/react/event-loop" />
+      <path value="$PROJECT_DIR$/vendor/react/child-process" />
+      <path value="$PROJECT_DIR$/vendor/react/promise" />
+      <path value="$PROJECT_DIR$/vendor/phpstan/phpstan" />
+      <path value="$PROJECT_DIR$/vendor/evenement/evenement" />
+      <path value="$PROJECT_DIR$/vendor/friendsofphp/php-cs-fixer" />
     </include_path>
   </component>
   <component name="ProjectColorInfo">{
@@ -193,7 +195,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "creationEntity",
+    "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "junie.onboarding.icon.badge.shown": "true",
     "last_opened_file_path": "C:/Users/Cyril/Documents/BUT INFO/Semestre 6/R6.06/R6_A_06_Maintenance",
@@ -253,6 +255,17 @@
       <list>
         <option value="$PROJECT_DIR$/vendor/symfony/stimulus-bundle/tests/fixtures/assets/more-controllers/other-controller.js" />
       </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
     </option>
   </component>
   <component name="VcsManagerConfiguration">

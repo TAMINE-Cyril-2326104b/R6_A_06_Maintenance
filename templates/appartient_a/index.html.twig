@@ -1,0 +1,33 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}AppartientA index{% endblock %}
+
+{% block body %}
+    <h1>AppartientA index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for appartientum in appartient_as %}
+            <tr>
+                <td>{{ appartientum.id }}</td>
+                <td>
+                    <a href="{{ path('app_appartient_a_show', {'id': appartientum.id}) }}">show</a>
+                    <a href="{{ path('app_appartient_a_edit', {'id': appartientum.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="2">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('app_appartient_a_new') }}">Create new</a>
+{% endblock %}
