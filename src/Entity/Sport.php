@@ -20,8 +20,7 @@ class Sport
     private ?string $type = null;
 
     /**
-     * Renvoie l'identifiant d'un sport
-     * @return int|null
+     * Renvoie l'identifiant d'un sport.
      */
     public function getId(): ?int
     {
@@ -29,8 +28,7 @@ class Sport
     }
 
     /**
-     * Renvoie le nom d'un sport
-     * @return string|null
+     * Renvoie le nom d'un sport.
      */
     public function getNom(): ?string
     {
@@ -38,8 +36,8 @@ class Sport
     }
 
     /**
-     * Met à jour le nom d'un sport
-     * @param string $nom
+     * Met à jour le nom d'un sport.
+     *
      * @return $this
      */
     public function setNom(string $nom): static
@@ -50,7 +48,8 @@ class Sport
     }
 
     /**
-     * Récupère le type de sport
+     * Récupère le type de sport.
+     *
      * @return string|null Le type d'un sport
      */
     public function getType(): ?string
@@ -59,8 +58,10 @@ class Sport
     }
 
     /**
-     * Met à jour le type du sport
+     * Met à jour le type du sport.
+     *
      * @param string $type Un type de sport
+     *
      * @return $this
      */
     public function setType(string $type): static

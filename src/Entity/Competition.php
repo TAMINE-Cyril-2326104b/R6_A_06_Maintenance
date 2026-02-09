@@ -21,8 +21,7 @@ class Competition
     private ?Championnat $championnat = null;
 
     /**
-     * Récupère l'identifiant d'une compétition
-     * @return int|null
+     * Récupère l'identifiant d'une compétition.
      */
     public function getId(): ?int
     {
@@ -30,8 +29,7 @@ class Competition
     }
 
     /**
-     * Récupère le nom d'une compétition
-     * @return string|null
+     * Récupère le nom d'une compétition.
      */
     public function getNom(): ?string
     {
@@ -39,8 +37,8 @@ class Competition
     }
 
     /**
-     * Met à jour le nom d'une compétition
-     * @param string $nom
+     * Met à jour le nom d'une compétition.
+     *
      * @return $this
      */
     public function setNom(string $nom): static
@@ -52,7 +50,6 @@ class Competition
 
     /**
      * Récupère un championnat.
-     * @return Championnat|null
      */
     public function getChampionnat(): ?Championnat
     {
@@ -61,7 +58,7 @@ class Competition
 
     /**
      * Met à jour un championnat d'une compétition.
-     * @param Championnat|null $championnat
+     *
      * @return $this
      */
     public function setChampionnat(?Championnat $championnat): static

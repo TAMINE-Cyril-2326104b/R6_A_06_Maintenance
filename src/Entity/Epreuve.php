@@ -3,8 +3,6 @@
 namespace App\Entity;
 
 use App\Repository\EpreuveRepository;
-use Doctrine\Common\Collections\ArrayCollection;
-use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 
 #[ORM\Entity(repositoryClass: EpreuveRepository::class)]
@@ -19,8 +17,7 @@ class Epreuve
     private ?string $nom = null;
 
     /**
-     * Récupère le nom de l'identifiant de l'épreuve
-     * @return int|null
+     * Récupère le nom de l'identifiant de l'épreuve.
      */
     public function getId(): ?int
     {
@@ -28,8 +25,7 @@ class Epreuve
     }
 
     /**
-     * Récupère le nom d'une épreuve
-     * @return string|null
+     * Récupère le nom d'une épreuve.
      */
     public function getNom(): ?string
     {
@@ -37,8 +33,8 @@ class Epreuve
     }
 
     /**
-     * Met à jour le nom d'une épreuve
-     * @param string $nom
+     * Met à jour le nom d'une épreuve.
+     *
      * @return $this
      */
     public function setNom(string $nom): static
