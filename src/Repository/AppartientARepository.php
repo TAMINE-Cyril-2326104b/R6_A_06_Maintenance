@@ -7,22 +7,10 @@ use Doctrine\Bundle\DoctrineBundle\Repository\ServiceEntityRepository;
 use Doctrine\Persistence\ManagerRegistry;
 
 /**
- * Repository de l'entité AppartientA.
- *
- * Permet d'accéder aux données AppartientA en base de données.
- *
  * @extends ServiceEntityRepository<AppartientA>
  */
 class AppartientARepository extends ServiceEntityRepository
 {
-    /**
-     * Constructeur du repository AppartientA.
-     *
-     * Initialise le repository en liant l'entité AppartientA
-     * au gestionnaire Doctrine.
-     *
-     * @param ManagerRegistry $registry le registre des managers Doctrine
-     */
     public function __construct(ManagerRegistry $registry)
     {
         parent::__construct($registry, AppartientA::class);
