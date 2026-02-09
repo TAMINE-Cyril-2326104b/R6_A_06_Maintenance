@@ -1,0 +1,52 @@
+<?php
+
+namespace App\Entity;
+
+use App\Repository\ConcerneRepository;
+use Doctrine\ORM\Mapping as ORM;
+
+#[ORM\Entity(repositoryClass: ConcerneRepository::class)]
+class Concerne
+{
+    #[ORM\Id]
+    #[ORM\GeneratedValue]
+    #[ORM\Column]
+    private ?int $id = null;
+
+    #[ORM\ManyToOne]
+    #[ORM\JoinColumn(nullable: false)]
+    private ?Competition $competition = null;
+
+    #[ORM\ManyToOne]
+    #[ORM\JoinColumn(nullable: false)]
+    private ?Epreuve $epreuve = null;
+
+    public function getId(): ?int
+    {
+        return $this->id;
+    }
+
+    public function getCompetition(): ?Competition
+    {
+        return $this->competition;
+    }
+
+    public function setCompetition(?Competition $competition): static
+    {
+        $this->competition = $competition;
+
+        return $this;
+    }
+
+    public function getEpreuve(): ?Epreuve
+    {
+        return $this->epreuve;
+    }
+
+    public function setEpreuve(?Epreuve $epreuve): static
+    {
+        $this->epreuve = $epreuve;
+
+        return $this;
+    }
+}
