@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}New AppartientA{% endblock %}
+
+{% block body %}
+    <section class="container">
+    <h1>Create new AppartientA</h1>
+
+    {{ include('appartient_a/_form.html.twig') }}
+
+    <a href="{{ path('app_appartient_a_index') }}">back to list</a>
+    </section>
+{% endblock %}
