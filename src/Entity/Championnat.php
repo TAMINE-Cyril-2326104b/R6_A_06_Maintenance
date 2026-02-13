@@ -4,7 +4,6 @@ namespace App\Entity;
 
 use App\Repository\ChampionnatRepository;
 use Doctrine\ORM\Mapping as ORM;
-use phpDocumentor\Reflection\Types\This;
 
 #[ORM\Entity(repositoryClass: ChampionnatRepository::class)]
 class Championnat
