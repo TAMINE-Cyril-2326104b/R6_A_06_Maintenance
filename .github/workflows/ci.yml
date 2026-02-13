@@ -43,6 +43,9 @@ jobs:
             - name: Vérification du style (PHP CS Fixer)
               run: vendor/bin/php-cs-fixer fix --dry-run --diff
 
+            - name: PHPStan
+              run: vendor/bin/phpstan analyse src
+
             - name: Préparer la base de test (Doctrine)
               env:
                   APP_ENV: test
@@ -55,4 +58,7 @@ jobs:
               env:
                   APP_ENV: test
                   DATABASE_URL: "mysql://app:app@127.0.0.1:3306/app?serverVersion=8.0&charset=utf8mb4"
-              run: vendor/bin/phpunit
+              run: php bin/phpunit
+
+            - name: Behat
+              run: vendor/bin/behat
