@@ -3,6 +3,7 @@
 {% block title %}Sport index{% endblock %}
 
 {% block body %}
+    <section class="container">
     <h1>Sport index</h1>
 
     <table class="table">
@@ -32,6 +33,6 @@
         {% endfor %}
         </tbody>
     </table>
-
     <a href="{{ path('app_sport_new') }}">Create new</a>
+    </section>
 {% endblock %}
