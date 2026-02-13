@@ -6,6 +6,7 @@ use App\Entity\Sport;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
+use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 
 class SportType extends AbstractType
 {
@@ -13,7 +14,14 @@ class SportType extends AbstractType
     {
         $builder
             ->add('nom')
-            ->add('type')
+            ->add('type', ChoiceType::class, [
+                'choices' => [
+                    'Individuel' => 'individuel',
+                    'Équipe' => 'equipe',
+                    "Individuel d'équipe" => 'individuel_equipe',
+                ],
+                'placeholder' => 'Choisir un type',
+            ])
         ;
     }
 

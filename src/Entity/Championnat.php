@@ -4,6 +4,7 @@ namespace App\Entity;
 
 use App\Repository\ChampionnatRepository;
 use Doctrine\ORM\Mapping as ORM;
+use phpDocumentor\Reflection\Types\This;
 
 #[ORM\Entity(repositoryClass: ChampionnatRepository::class)]
 class Championnat
@@ -53,4 +54,28 @@ class Championnat
 
         return $this;
     }
+
+    /**
+     * Récupère le sport associé au championnat.
+     *
+     * @return Sport
+     */
+    public function getSport(): ?Sport
+    {
+        return $this->sport;
+    }
+
+    /**
+     * Définit le sport associé au championnat.
+     *
+     * @return $this
+     */
+    public function setSport(?Sport $sport): static
+    {
+        $this->sport = $sport;
+
+        return $this;
+    }
+
 }
+
