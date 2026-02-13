@@ -41,7 +41,7 @@
     <commands />
     <urls />
   </component>
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="$PROJECT_DIR$/../../../../../../../xampp/php/php.exe">
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="/bin/php">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/symfony/security-http" />
       <path value="$PROJECT_DIR$/vendor/symfony/config" />
@@ -207,10 +207,10 @@
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "creationEntity",
+    "git-widget-placeholder": "controller",
     "ignore.virus.scanning.warn.message": "true",
     "junie.onboarding.icon.badge.shown": "true",
-    "last_opened_file_path": "C:/Users/Cyril/Documents/BUT INFO/Semestre 6/R6.06/R6_A_06_Maintenance",
+    "last_opened_file_path": "/amuhome/t22014611/Documents/3e_annee/R6/R6.05_dev_avance/R6.05_dev_avance",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -230,8 +230,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-PS-253.30387.85" />
-        <option value="bundled-php-predefined-a98d8de5180a-0e0d91225499-com.jetbrains.php.sharedIndexes-PS-253.30387.85" />
+        <option value="bundled-js-predefined-d6986cc7102b-b26f3e71634d-JavaScript-PS-251.26094.133" />
+        <option value="bundled-php-predefined-a98d8de5180a-c5828cf854d9-com.jetbrains.php.sharedIndexes-PS-251.26094.133" />
       </set>
     </attachedChunks>
   </component>
@@ -249,6 +249,7 @@
       <workItem from="1770560361531" duration="5166000" />
       <workItem from="1770622224608" duration="1270000" />
       <workItem from="1770623521750" duration="938000" />
+      <workItem from="1770709797499" duration="202000" />
     </task>
     <task id="LOCAL-00001" summary="docs: Ajout de commentaires">
       <option name="closed" value="true" />
@@ -258,7 +259,15 @@
       <option name="project" value="LOCAL" />
       <updated>1770566395794</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Merge branch 'master' into controller&#10;&#10;# Conflicts:&#10;#&#9;.idea/php.xml&#10;#&#9;.idea/workspace.xml">
+      <option name="closed" value="true" />
+      <created>1770633594186</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1770633594186</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
