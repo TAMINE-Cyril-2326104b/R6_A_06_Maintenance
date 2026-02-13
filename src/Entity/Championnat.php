@@ -77,5 +77,4 @@ class Championnat
 
         return $this;
     }
-
 }

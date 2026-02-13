@@ -22,7 +22,9 @@ class AppartientA
     private ?Epreuve $epreuve = null;
 
     /**
-     * @return int|null
+     * Récupère l'identifiant unique de la relation.
+     *
+     * @return int|null L'identifiant de l'entité AppartientA
      */
     public function getId(): ?int
     {
@@ -30,7 +32,9 @@ class AppartientA
     }
 
     /**
-     * @return Sport|null
+     * Récupère le sport associé à cette relation.
+     *
+     * @return Sport|null Le sport lié à cette épreuve
      */
     public function getSport(): ?Sport
     {
@@ -38,7 +42,10 @@ class AppartientA
     }
 
     /**
-     * @param Sport|null $sport
+     * Définit le sport associé à cette relation.
+     *
+     * @param Sport|null $sport Le sport à associer
+     *
      * @return $this
      */
     public function setSport(?Sport $sport): static
@@ -49,7 +56,9 @@ class AppartientA
     }
 
     /**
-     * @return Epreuve|null
+     * Récupère l'épreuve associée à cette relation.
+     *
+     * @return Epreuve|null L'épreuve liée à ce sport
      */
     public function getEpreuve(): ?Epreuve
     {
@@ -57,7 +66,10 @@ class AppartientA
     }
 
     /**
-     * @param Epreuve|null $epreuve
+     * Définit l'épreuve associée à cette relation.
+     *
+     * @param Epreuve|null $epreuve L'épreuve à associer
+     *
      * @return $this
      */
     public function setEpreuve(?Epreuve $epreuve): static
