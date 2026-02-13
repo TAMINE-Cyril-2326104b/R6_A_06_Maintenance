@@ -82,5 +82,4 @@ class Championnat
     {
         return (string) $this->nom;
     }
-
 }

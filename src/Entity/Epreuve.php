@@ -48,5 +48,4 @@ class Epreuve
     {
         return (string) $this->nom;
     }
-
 }

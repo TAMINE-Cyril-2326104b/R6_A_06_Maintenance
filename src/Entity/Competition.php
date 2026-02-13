@@ -72,5 +72,4 @@ class Competition
     {
         return (string) $this->nom;
     }
-
 }
