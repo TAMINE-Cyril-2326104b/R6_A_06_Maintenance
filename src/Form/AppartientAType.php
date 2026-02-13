@@ -17,11 +17,11 @@ class AppartientAType extends AbstractType
         $builder
             ->add('sport', EntityType::class, [
                 'class' => Sport::class,
-                'choice_label' => 'id',
+                'choice_label' => 'nom',
             ])
             ->add('epreuve', EntityType::class, [
                 'class' => Epreuve::class,
-                'choice_label' => 'id',
+                'choice_label' => 'nom',
             ])
         ;
     }

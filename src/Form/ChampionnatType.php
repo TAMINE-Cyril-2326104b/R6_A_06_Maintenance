@@ -17,7 +17,7 @@ class ChampionnatType extends AbstractType
             ->add('nom')
             ->add('sport', EntityType::class, [
                 'class' => Sport::class,
-                'choice_label' => 'id',
+                'choice_label' => 'nom',
             ])
         ;
     }

@@ -13,6 +13,45 @@
         {% endblock %}
     </head>
     <body>
-        {% block body %}{% endblock %}
+    <header class="app-header">
+        <div class="container d-flex align-items-center justify-content-between">
+
+            <a href="{{ path('app_home') }}" class="brand">
+                Gestion Sports
+            </a>
+
+            <nav class="nav-links">
+                <a href="{{ path('app_home') }}"
+                   class="{{ app.request.attributes.get('_route') starts with 'app_home' ? 'active' : '' }}">
+                    Accueil
+                </a>
+
+                <a href="{{ path('app_sport_index') }}"
+                   class="{{ app.request.attributes.get('_route') starts with 'app_sport' ? 'active' : '' }}">
+                    Sports
+                </a>
+
+                <a href="{{ path('app_championnat_index') }}"
+                   class="{{ app.request.attributes.get('_route') starts with 'app_championnat' ? 'active' : '' }}">
+                    Championnats
+                </a>
+
+                <a href="{{ path('app_competition_index') }}"
+                   class="{{ app.request.attributes.get('_route') starts with 'app_competition' ? 'active' : '' }}">
+                    Compétitions
+                </a>
+
+                <a href="{{ path('app_epreuve_index') }}"
+                   class="{{ app.request.attributes.get('_route') starts with 'app_epreuve' ? 'active' : '' }}">
+                    Épreuves
+                </a>
+
+            </nav>
+
+        </div>
+    </header>
+
+
+    {% block body %}{% endblock %}
     </body>
 </html>
