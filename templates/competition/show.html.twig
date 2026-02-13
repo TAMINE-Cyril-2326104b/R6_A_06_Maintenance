@@ -15,6 +15,12 @@
                 <th>Nom</th>
                 <td>{{ competition.nom }}</td>
             </tr>
+            <div class="d-flex gap-2 mt-3">
+                <a class="btn btn-main btn-sm" href="{{ path('app_concerne_new') }}">
+                    Ajouter une épreuve à cette compétition
+                </a>
+            </div>
+
         </tbody>
     </table>
 

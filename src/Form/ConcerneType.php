@@ -17,11 +17,11 @@ class ConcerneType extends AbstractType
         $builder
             ->add('competition', EntityType::class, [
                 'class' => Competition::class,
-                'choice_label' => 'id',
+                'choice_label' => 'nom',
             ])
             ->add('epreuve', EntityType::class, [
                 'class' => Epreuve::class,
-                'choice_label' => 'id',
+                'choice_label' => 'nom',
             ])
         ;
     }
