@@ -57,7 +57,7 @@ class Championnat
     /**
      * Récupère le sport associé au championnat.
      *
-     * @return Sport
+     * @return Sport|null Le sport lié à ce championnat
      */
     public function getSport(): ?Sport
     {
@@ -65,7 +65,9 @@ class Championnat
     }
 
     /**
-     * Définit le sport associé au championnat.
+     * Met à jour le sport associé au championnat.
+     *
+     * @param Sport|null $sport Un sport à associer
      *
      * @return $this
      */
@@ -77,4 +79,3 @@ class Championnat
     }
 
 }
-

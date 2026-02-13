@@ -21,16 +21,26 @@ class AppartientA
     #[ORM\JoinColumn(nullable: false)]
     private ?Epreuve $epreuve = null;
 
+    /**
+     * @return int|null
+     */
     public function getId(): ?int
     {
         return $this->id;
     }
 
+    /**
+     * @return Sport|null
+     */
     public function getSport(): ?Sport
     {
         return $this->sport;
     }
 
+    /**
+     * @param Sport|null $sport
+     * @return $this
+     */
     public function setSport(?Sport $sport): static
     {
         $this->sport = $sport;
@@ -38,11 +48,18 @@ class AppartientA
         return $this;
     }
 
+    /**
+     * @return Epreuve|null
+     */
     public function getEpreuve(): ?Epreuve
     {
         return $this->epreuve;
     }
 
+    /**
+     * @param Epreuve|null $epreuve
+     * @return $this
+     */
     public function setEpreuve(?Epreuve $epreuve): static
     {
         $this->epreuve = $epreuve;
