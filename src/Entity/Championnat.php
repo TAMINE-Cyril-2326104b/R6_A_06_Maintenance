@@ -53,4 +53,28 @@ class Championnat
 
         return $this;
     }
+
+    /**
+     * Récupère le sport associé au championnat.
+     *
+     * @return Sport|null Le sport lié à ce championnat
+     */
+    public function getSport(): ?Sport
+    {
+        return $this->sport;
+    }
+
+    /**
+     * Met à jour le sport associé au championnat.
+     *
+     * @param Sport|null $sport Un sport à associer
+     *
+     * @return $this
+     */
+    public function setSport(?Sport $sport): static
+    {
+        $this->sport = $sport;
+
+        return $this;
+    }
 }
