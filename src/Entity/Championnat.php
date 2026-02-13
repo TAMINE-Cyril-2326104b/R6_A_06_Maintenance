@@ -53,4 +53,16 @@ class Championnat
 
         return $this;
     }
+
+    public function getSport(): ?Sport
+    {
+        return $this->sport;
+    }
+
+    public function setSport(?Sport $sport): static
+    {
+        $this->sport = $sport;
+        return $this;
+    }
+
 }
