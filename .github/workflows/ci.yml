@@ -1,31 +1,58 @@
 name: CI
 
 on:
-  push:
-    branches: [ "main", "master" ]
-  pull_request:
-    branches: [ "main", "master" ]
+    push:
+        branches: [ "main", "master" ]
+    pull_request:
+        branches: [ "main", "master" ]
 
 jobs:
-  tests:
-    runs-on: ubuntu-latest
+    tests:
+        runs-on: ubuntu-latest
 
-    steps:
-      - name: Récupération du code
-        uses: actions/checkout@v4
+        services:
+            mysql:
+                image: mysql:8.0
+                env:
+                    MYSQL_DATABASE: app_test
+                    MYSQL_USER: app
+                    MYSQL_PASSWORD: app
+                    MYSQL_ROOT_PASSWORD: root
+                ports:
+                    - 3306:3306
+                options: >-
+                    --health-cmd="mysqladmin ping -h 127.0.0.1 -proot"
+                    --health-interval=10s
+                    --health-timeout=5s
+                    --health-retries=10
 
-      - name: Installation de PHP
-        uses: shivammathur/setup-php@v2
-        with:
-          php-version: '8.3'
-          extensions: mbstring, intl, pdo_mysql
-          coverage: none
+        steps:
+            - name: Récupération du code
+              uses: actions/checkout@v4
 
-      - name: Installation des dépendances
-        run: composer install --no-interaction --prefer-dist
+            - name: Installation de PHP
+              uses: shivammathur/setup-php@v2
+              with:
+                  php-version: '8.3'
+                  extensions: mbstring, intl, pdo_mysql
+                  coverage: none
 
-      - name: Vérification du style (PHP CS Fixer)
-        run: vendor/bin/php-cs-fixer fix --dry-run --diff
+            - name: Installation des dépendances
+              run: composer install --no-interaction --prefer-dist
 
-      - name: Lancement des tests
-        run: vendor/bin/phpunit
+            - name: Vérification du style (PHP CS Fixer)
+              run: vendor/bin/php-cs-fixer fix --dry-run --diff
+
+            - name: Préparer la base de test (Doctrine)
+              env:
+                  APP_ENV: test
+                  DATABASE_URL: "mysql://app:app@127.0.0.1:3306/app_test?serverVersion=8.0&charset=utf8mb4"
+              run: |
+                  php bin/console doctrine:database:create --if-not-exists --env=test
+                  php bin/console doctrine:migrations:migrate --no-interaction --env=test
+
+            - name: Lancement des tests
+              env:
+                  APP_ENV: test
+                  DATABASE_URL: "mysql://app:app@127.0.0.1:3306/app_test?serverVersion=8.0&charset=utf8mb4"
+              run: vendor/bin/phpunit
